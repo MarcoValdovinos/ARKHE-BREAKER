@@ -17,3 +17,6 @@ grep -rn "ecrecover\|verify" $T/contracts/PoR/PoR.sol | head -n 20
 grep -n "safeIncreaseAllowance" $T/contracts/stakeAndBake/StakeAndBake.sol
 echo === MINT ROL FIX ===
 grep -n "function mint" -A 4 $T/contracts/strategy/ShareToken.sol | head -n 20
+echo === GENERICO ===
+grep -rn "delegatecall" $T/contracts/ 2>/dev/null | head -n 20
+grep -rn "function mint" $T/contracts/ 2>/dev/null | head -n 20
